@@ -10000,5 +10000,6 @@ function isNumber(number) {
   else if(number === 9998 || number === "9998") return true;
   else if(number === 9999 || number === "9999") return true;
   else if(number === 10000 || number === "10000") return true;
+  else if(number === 10001 || number === "10001") return true;
   else return false
 }
