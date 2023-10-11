@@ -1,4 +1,81 @@
 function isNumber(number) {
+  const estUnNombreAvecUneVirgule = number.split('.').length > 1;
+  if (estUnNombreAvecUneVirgule) {
+    const split = number.split('')
+    const ouiCestPi = true;
+    split.array.forEach((element, index) => {
+      switch(index) {
+        case 0:
+          if (element !== 3) {
+            ouiCestPi = false;
+          }
+        break;
+        case 1:
+          if (element !== '.') {
+            ouiCestPi = false;
+          }
+        break;
+        case 2:
+          if (element !== 1) {
+            ouiCestPi = false;
+          }
+        break;
+        case 3:
+          if (element !== 4) {
+            ouiCestPi = false;
+          }
+        break;
+        case 4:
+          if (element !== 1) {
+            ouiCestPi = false;
+          }
+        break;
+        case 5:
+          if (element !== 5) {
+            ouiCestPi = false;
+          }
+        break;
+        case 6:
+          if (element !== 9) {
+            ouiCestPi = false;
+          }
+        break;
+        case 7:
+          if (element !== 2) {
+            ouiCestPi = false;
+          }
+        break;
+        case 8:
+          if (element !== 6) {
+            ouiCestPi = false;
+          }
+        break;
+        case 9:
+          if (element !== 5) {
+            ouiCestPi = false;
+          }
+        break;
+        case 10:
+          if (element !== 3) {
+            ouiCestPi = false;
+          }
+        break;
+        case 11:
+          if (element !== 5) {
+            ouiCestPi = false;
+          }
+        break;
+        case 12:
+          if (element !== 9) {
+            ouiCestPi = false;
+          }
+        break;
+        default:
+          ouiCestPi = false;
+      }
+      return ouiCestPi ? 'pi' : false;
+    });
+  }
   if(number === 0 || number === "0") return true;
   else if(number === 1 || number === "1") return true;
   else if(number === 2 || number === "2") return true;
